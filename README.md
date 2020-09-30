@@ -80,7 +80,9 @@ https://gyazo.com/f33d5ca6b935a36d20466d29063049d4
 
 ・開発環境：visual studio code
 
-・言語：Ruby on Rails
+・言語：Ruby
+
+・フレームワーク：Ruby on Rails
 
 【アクリケーションの機能】
 
