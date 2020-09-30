@@ -130,14 +130,4 @@ https://gyazo.com/f33d5ca6b935a36d20466d29063049d4
 - belongs_to :user
 
 
-
-
-
-
-
-
-
-
-
-
-usuda
+aiueo
