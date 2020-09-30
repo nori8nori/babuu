@@ -1,0 +1,28 @@
+/* 新規投稿 */
+
+.input{
+  border: 2px solid #0a0;  /* 枠線 */
+  border-radius: 0.67em;   /* 角丸 */
+  padding: 0.5em;         
+  background-color: snow;  /* 背景色 */
+  width: 100%;             /* 横幅いっぱいにする */
+  box-sizing: border-box;  /* ※これがないと横にはみ出る */
+  height: 30px;           /* 高さ */
+  font-size: 1em;          /* 文字サイズ */
+  line-height: 1.2;        /* 行の高さ */
+}
+
+.button{
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #FF8856;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #FF8856;  
+}

@@ -1,0 +1,11 @@
+<div>
+  <h1>投稿を作成する</h1>
+   <%= form_with model: @tweet,url:tweets_path, local: true do |f| %>
+   <%= render 'shared/error_messages', model: f.object %>
+    <%= f.text_area :content ,class:"text-area"%>
+    <%= f.file_field :images, multiple: true %><br>
+    <div class = "submit-button">
+      <%= f.submit"投稿する", class:"button"%>
+    </div>
+   <% end %>
+</div>

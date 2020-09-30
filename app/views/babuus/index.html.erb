@@ -1,0 +1,67 @@
+<div class = "content-max">
+
+  <div class = "content-block">
+    
+    <% @tweets.each do |tweet| %>
+
+      <div class = "content">
+        <div class = "user-info">
+          <div class = "image">
+            <%= image_tag tweet.user.profile.image  , class:"image-human"%>
+          </div>
+          <div class = "profile">
+            <div class = "name-history">
+              <div class = "name">
+                【名前】<%= tweet.user.profile.name %>
+              </div>
+              <div class = "histroy">
+                【育児歴】<%= tweet.user.profile.history %>
+              </div>
+            </div>
+            <div class = "purpose">
+                【 一 言 】<%= tweet.user.profile.purpose %>
+            </div>
+          </div>
+        </div>
+
+        <div class = "text">
+          <%= tweet.content %>
+        </div>
+
+        <% if tweet.images.attached? %>
+          <div class = "images">
+            <% tweet.images.each do |image| %>
+              <%= image_tag image , class:"image-baby"%>
+            <% end %>
+          </div>
+        <% end %>
+
+        <div class = "action">
+          <div class = "like">
+          </div>
+          <div class = "comment">
+          </div>
+        </div>
+        
+      </div>
+    <% end %>
+
+  </div>
+
+  <div class = "content-block-side">
+    《登録者一覧》
+    <% @profiles.each do |profile| %>
+      <div class = "user-info-side">
+          <div class="another">
+            <%= image_tag profile.image  , class:"image-human-side"%>
+            <div class = "side-all">
+              【名前】<%= profile.name %><br>
+              【育児歴】<%= profile.history %><br>
+              【 一 言 】<%= profile.purpose %><br>
+            </div>
+          </div>
+      </div>
+     <% end %>
+  </div>
+
+</div>

@@ -1,0 +1,28 @@
+<div>
+  <h1>プロフィールを作成する</h1>
+   <%# render 'shared/alert' %>
+  <%= form_with model: @profile,url:profiles_path, local: true do |f| %>
+  <%= render 'shared/error_messages', model: f.object %>
+    <div class="profile-grope">
+      <%= f.label :name,"ニックネーム（実際に公開される名前です）"%>
+    </div>
+    <%= f.text_field :name ,class:"text-area-edit"%>
+    
+    <div class="profile-grope">
+      <%= f.label :history , "育児歴"%>
+    </div>
+    <%= f.text_field :history ,class:"text-area-edit"%>
+    
+    <div class="profile-grope">
+     <%= f.label :purpose ,"一言"%>
+    </div>
+    <%= f.text_field :purpose ,class:"text-area-edit"%>
+    <div class ="image">
+      <%= f.label :image ,"プロフィール画像"%>
+    </div>
+    <%= f.file_field :image %><br>
+    <div class = "submit-button">
+      <%= f.submit "登録する",class:"button"%>
+    </div>
+  <% end %>
+</div>
